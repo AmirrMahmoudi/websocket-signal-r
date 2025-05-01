@@ -6,7 +6,7 @@ export const startSignalRConnection = async () => {
   if (connection) return; //
 
   connection = new signalR.HubConnectionBuilder()
-    .withUrl("https://websocket.classbon.com/hub")
+    .withUrl("https://websocket-api.classbon.com/hub") // API URL endpoint for SignalR
     .withAutomaticReconnect()
     .configureLogging(signalR.LogLevel.Error)
     .build();
