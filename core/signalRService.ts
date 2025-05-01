@@ -18,3 +18,13 @@ export const startSignalRConnection = async () => {
     console.log("SignalR connection error" + err);
   }
 };
+
+export const startProgress = async () => {
+  if (connection?.state === signalR.HubConnectionState.Connected) {
+    try {
+      await connection.invoke("StartLongRunningTask");
+    } catch (err) {
+      console.log("SignalR send message error:" + err);
+    }
+  }
+};
