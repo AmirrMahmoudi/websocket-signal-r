@@ -10,4 +10,4 @@ const SignalRProvider = () => {
   return null;
 };
 
-export default SignalRProvider
+export default SignalRProvider;

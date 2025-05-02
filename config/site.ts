@@ -12,6 +12,5 @@ export const siteConfig = {
       label: "Location Scenario",
       href: "/map",
     },
-
   ],
 };
